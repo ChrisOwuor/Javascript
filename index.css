@@ -13,6 +13,13 @@ button:hover {
   background-color: rgb(212, 42, 30);
   border-radius: 3px;
 }
-#testDiv2{
-background-color: bisque;
+button:active {
+  background-color: antiquewhite;
+}
+#testDiv2 {
+  background-color: bisque;
+}
+#testDiv2:hover {
+  transform: scale(1.2);
+  transition-timing-function: linear;
 }
