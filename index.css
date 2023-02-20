@@ -1,25 +1,67 @@
 :root {
   background-color: aqua;
 }
+
 .li_task {
   display: inline-flex;
   gap: 5px;
 }
+
 .btn2 {
   border: none;
   background-color: aqua;
 }
+
 button:hover {
   background-color: rgb(212, 42, 30);
   border-radius: 3px;
 }
+
 button:active {
   background-color: antiquewhite;
 }
+
 #testDiv2 {
+background-image: linear-gradient(to right, #00b09b, #96c93d);
   background-color: bisque;
+box-shadow: 2px 2px rgb(245, 241, 241);
 }
+
 #testDiv2:hover {
   transform: scale(1.2);
   transition-timing-function: linear;
+}
+
+
+.button1 img{
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  width: 25px;
+  
+}
+.button1 :hover{
+ 
+  opacity: 90%;
+}
+
+#testDiv2 #noVisible{
+  display: none;
+}
+
+#testDiv2:hover #noVisible{
+  display: flex;
+}      
+
+.altdiv {
+
+margin-left: 600px;
+z-index: 1;
+border: none;
+border-radius: 10px;
+position: absolute;
+width: 250px;
+
+padding: 25px;
+text-align: center;
+display: none;
 }

@@ -9,6 +9,9 @@
   </head>
   <body>
     <div class="main-div">
+      <p  style="background-color: rgb(91, 212, 146);
+      text-align: center;
+      max-width: fit-content;"class="altdiv"></p>
       <h1 style="text-align: center">TO-DO APPLIST</h1>
       <span
         style="
@@ -74,13 +77,13 @@
         "
       >
         <li class="li_task">
-          <button class="btn2" id="btn">ALL</button>
+          <button class="btn2" id="btnAll" onclick="getArrayItems()">ALL</button>
         </li>
         <li class="li_task">
-          <button class="btn2" id="btn">TO-DO</button>
+          <button class="btn2" id="btnTTodo" onclick="getTodoItems()">TO-DO</button>
         </li>
         <li class="li_task">
-          <button class="btn2" id="btn">COMPLETED</button>
+          <button onc class="btn2" id="btnComplete" onclick="getCompleteTasks()">COMPLETED</button>
         </li>
       </ul>
     </div>
@@ -104,7 +107,7 @@
       id="testDiv"
       style="
         display: flex;
-        gap: 25px;
+        gap: 15px;
         padding: 40px;
         flex-wrap: wrap;
         flex-grow: 1;
@@ -124,6 +127,7 @@
       >
         YOU HAVE NO TASKS AVAILABLE PLEASE ADD
       </p>
+    
     </div>
     <!-- <script src="app.js"></script> -->
     <script src="test.js"></script>
