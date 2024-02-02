@@ -1,3 +1,4 @@
+debugger;
 let user = {
   name: "John",
   age: 30,
@@ -21,4 +22,5 @@ class MyClass {
 console.log(MyClass.staticProperty); // Accessing static property
 
 const instance1 = new MyClass();
+debugger;
 instance1.hello();
