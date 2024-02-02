@@ -30,6 +30,7 @@ let menu = {
 };
 
 const multiplyNumeric = (obj) => {
+  debugger;
   for (let key in obj) {
     if (typeof obj[key] === "number") {
       obj[key] *= 2;
