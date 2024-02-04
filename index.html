@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class Animal {
+        constructor(origin) {
+          this.name = "coco";
+          this.color = "blue";
+          this.origin = origin;
+        }
+        static move() {
+          console.log("move");
+        }
+        static home = "nairobi";
+        bark() {
+          console.log("bark");
+        }
+        eat() {
+          console.log("eating");
+        }
+      }
+      const dog = new Animal("turkey");
+    </script>
+  </body>
+</html>
