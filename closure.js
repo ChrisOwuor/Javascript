@@ -1,5 +1,9 @@
+
+
 function addTo(num) {
-  return function names(params) {};
+  return function names(params) {
+    return params + num;
+  };
 }
-const fOne = new addTo(4);
-console.log(fOne);
+const fOne = addTo(4);
+console.dir(fOne(8));
