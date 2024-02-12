@@ -1,5 +1,5 @@
 class Dom {
-  constructor(name, origin, color) {
+  constructor(name, color, origin) {
     this._name = name;
     this._color = color;
     this._origin = origin;
@@ -9,9 +9,6 @@ class Dom {
   }
   set name(val) {
     this._name = val;
-  }
-  getngetme() {
-    console.log(this._name);
   }
 
   getorigin() {
@@ -23,17 +20,40 @@ class Dom {
   }
 }
 const dog = new Dom("coco", "Turkey", "brown");
+console.log(Object.getOwnPropertyNames(dog.__proto__));
 
 class Cat extends Dom {
   constructor(scope, ...args) {
     super(...args);
-    this.scope = scope;
+    this._scope = scope;
   }
 
   getScope() {
-    console.log(this.scope);
+    console.log(this._scope);
   }
 }
 
-const mi = new Cat("home");
+const mi = new Cat("home", "coco", "brown", "Turkey");
 mi.getScope();
+mi.getcolor();
+console.log(Object.getOwnPropertyNames(mi.__proto__));
+
+/*
+Cat {
+  _name: 'coco',
+  _color: 'brown',
+  _origin: 'Turkey',
+  _scope: 'home'
+}
+*/
+const user = {
+  name: "chris",
+  age: 22,
+  calc() {
+    console.log(this.age);
+  },
+};
+console.log(user.__proto__);
+console.log(mi.__proto__);
+
+console.log(Object.getOwnPropertyNames(user));
